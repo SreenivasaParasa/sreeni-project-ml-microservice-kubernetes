@@ -42,9 +42,47 @@ source .devops/bin/activate
 2. Run in Docker:  `./run_docker.sh`
 3. Run in Kubernetes:  `./run_kubernetes.sh`
 
+./run_docker.sh
+ ./make_prediction.sh
+./upload_docker.sh    
+he push refers to repository [docker.io/sreenivasaparasa/api]
+1d5b479efc25: Pushed 
+a251694f09f2: Pushed 
+650104debdce: Pushed 
+42855dae5730: Mounted from library/python 
+0e0c3e2a9021: Mounted from library/python 
+e1bb4ba2013a: Mounted from library/python 
+3284da728da0: Mounted from library/python 
+a8e0bda64b48: Mounted from library/python 
+54060bf84ed3: Mounted from library/python 
+d1b4bcba0655: Mounted from library/python 
+1c6f4c23073b: Mounted from library/python 
+ef9ee2bbae58: Mounted from library/python 
+latest: digest: sha256:df144ca4e6617a98678f8dd16114cb1a3f1ac29d1e9e76c9ae2eee22e573a54f size: 2845
+(.devops) anirudhsriram@anirudhs-MacBook-Air project-ml-microservice-kubernetes % ./upload_docker.sh
+Docker ID and Image: sreenivasaparasa/api
+Password: 
+Login Succeeded
+
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+1165  minikube start --driver=docker\n
+ 1166  kubectl config view
+ 1167  ./run_kubernetes.sh
+ 1168  kubectl config view
+ 1169  kubectl get pd
+ 1170  kubectl get pod
+ 1171  kubectl get pod
+ 1172  ./run_kuberenets.sh
+ 1173  lsw
+ 1174  ls -ltr
+ 1175  ./run_kubernetes.sh
+ 1176  minikube stop
+ 1177  git add .
+ 1178  git commit -m "check all files"
+ 1179  git push
